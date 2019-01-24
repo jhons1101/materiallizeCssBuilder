@@ -1,0 +1,236 @@
+.card-panel-left {
+
+}
+.card-panel-right {
+    padding: 10px;
+}
+.collapsible {
+    border:0;
+    color: #d2d2d2;
+}
+.collapsible-header {
+    background-color: transparent;
+    border:0;
+}
+.collapsible-header-builder {
+    border-bottom: 1px solid #6b6b6b;
+    line-height: 1.5;
+    padding: 1rem;
+    font-weight: 600;
+    word-break: break-word;
+}
+.collapsible-header-builder i {
+    width: 2rem;
+    font-size: 1.6rem;
+    display: inline-block;
+    text-align: center;
+    margin-right: 1rem;
+}
+.collapsible-body {
+    background-color: #2b2b2b;
+    padding: 10px 0;
+}
+.browser-default {
+    color: #2b2b2b;
+    height: 30px;
+}
+.collapsible-body-div {
+    padding: 5px;
+}
+.collapsible-body .row {
+    margin-bottom: 0;
+    margin: 2px 0;
+}
+.collapsible-body .row .btn {
+    height: unset;
+    line-height: unset;
+    padding: 0 10px;
+}
+.collapsible-body .row .col {
+    padding: 0 5px !important;
+}
+.collapsible-body .row .col span {
+    /* position: relative; */
+    top: -4px;
+}
+.btn-flat {
+    padding: 0 10px;
+}
+a .btn-flat:active {
+    background: #dedede;
+}
+.canvas {
+    padding: 10px;
+    color:#666;
+    min-height: calc(100vh - 90px);
+    border-radius: 3px;
+}
+.view {
+    display: none;
+}
+.builder .column {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    margin: 15px 0;
+    padding: 39px 19px 24px;
+    position: relative;
+}
+.builder.edit .column:after {
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    color: #9DA0A4;
+    content: "Column";
+    font-size: 12px;
+    font-weight: bold;
+    left: -1px;
+    padding: 3px 7px;
+    position: absolute;
+    top: -1px;
+}
+.builder.edit .canvas {
+    margin-left: 0px;
+    margin-top: 10px;
+    padding: 30px 15px 15px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    position: relative;
+    word-wrap: break-word;
+    width: 100%;
+}
+.builder.edit .canvas:after {
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    color: #9DA0A4;
+    content: "Container";
+    font-size: 12px;
+    font-weight: bold;
+    left: -1px;
+    padding: 3px 7px;
+    position: absolute;
+    top: -1px;
+}
+.builder .canvas .row {
+    background-color: #F5F5F5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 0 1px 13px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 1px 13px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 13px rgba(0, 0, 0, 0.1);
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    margin: 15px 0;
+    position: relative;
+    padding: 25px 14px 0;
+}
+.builder.edit .canvas .row:before {
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    color: #9DA0A4;
+    content: "Row";
+    font-size: 12px;
+    font-weight: bold;
+    left: -1px;
+    line-height: 2;
+    padding: 3px 7px;
+    position: absolute;
+    top: -1px;
+}
+input, .draggable {
+    width: 100%;
+}
+.waves-effect {
+    margin: 2px;
+    width: 100%;
+}
+.builder .box, .builder .lyrow {
+    position: relative;
+}
+.builder.edit .canvas .remove {
+    background: #E91E63;
+    font-size: 12px;
+    padding: 6px;
+    position: absolute; 
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+}
+.builder.edit .drag {
+    background: #3095b4;
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 80px;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 12px;
+}
+.builder.edit .canvas .remove i, .builder.edit .drag i {
+    font-size: 11px;
+}
+.builder .canvas .drag, .builder .canvas .remove {
+    filter: alpha(opacity=20);
+    opacity: 0.2;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.builder .canvas .drag:hover, .builder .canvas .remove:hover {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+.builder.edit .canvas .lyrow .drag {
+    font-size: 10px;
+    top: 5px;
+    right: 90px;
+    z-index: 10;
+}
+.builder .canvas .preview {
+    display: none;
+}
+.badge-danger {
+    color: #fff;
+    background-color: #dc3545;
+}
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+.delimiter {
+    border: 1px dashed #a4c1ca;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+
+
+/* Para tabletas de 7 pulgadas */
+@media (max-width: 800px) {
+    .btn-flat i {
+        font-size: 30px;
+    }
+    .btn {
+        letter-spacing: 0;
+        font-size: .7rem;
+    }
+}
+
+/* Para tabletas de 10 pulgadas */
+@media (min-width: 801px) {
+    .btn-flat i {
+        font-size: 25px;
+    }
+}

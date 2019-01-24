@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Builder materialize</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $(".draggable").draggable({
+                helper:'clone',
+            });
+
+            $("#canvas").droppable({
+                accept: ".draggable",
+                drop: function (event, obj) {
+                    var itemMostrar = $(obj.draggable).siblings('.view').html();
+                    $(this).append(itemMostrar);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="row">
+        <div class="col s12 m3">
+            <div class="card-panel-left grey darken-4">
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header-builder">
+                            <i class="material-icons">perm_data_setting</i>
+                            Builder MaterializeCss
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header active">
+                            <i class="material-icons">filter_drama</i>
+                            Grid system
+                        </div>
+                        <div class="collapsible-body">
+                            <div class="row">
+                                <div class="col s12 collapsible-body-div">
+                                    <div class="col s8">
+                                        <input type="text" id="grid12" value="12" disabled class="browser-default"/>
+                                    </div>
+                                    <div class="col s4">
+                                        <div id="drag_grid_12" class="btn draggable" title="drag" draggable="true">
+                                            <i class="material-icons">zoom_out_map</i>
+                                            <span>drag</span>
+                                        </div>
+                                        <div class="view">
+                                            <div class="row">
+                                                <div class="options">
+                                                    <a href="#close" class="remove badge badge-danger">
+                                                        <i class="material-icons">zoom_out_map</i>&nbsp;
+                                                        <span>Eliminar</span>
+                                                    </a>
+                                                    <a class="drag badge">
+                                                        <i class="material-icons">zoom_out_map</i>&nbsp;
+                                                        <span>Ordenar</span>
+                                                    </a>
+                                                    <div class="preview">
+                                                        <input type="text" value="12" placeholder="Enter your own" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col s12 column"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 collapsible-body-div">
+                                    <div class="col s8">
+                                        <input type="text" id="grid66" value="6 x 6" disabled class="browser-default"/>
+                                    </div>
+                                    <div class="col s4">
+                                        <div id="drag_grid_66" class="btn draggable" title="drag">
+                                            <i class="material-icons">zoom_out_map</i>
+                                            <span>drag</span>
+                                        </div>
+                                        <div class="view">
+                                            <div class="row">
+                                                <div class="options">
+                                                    <a href="#close" class="remove badge badge-danger">
+                                                        <i class="material-icons">zoom_out_map</i>&nbsp;
+                                                        <span>Eliminar</span>
+                                                    </a>
+                                                    <a class="drag badge">
+                                                        <i class="material-icons">zoom_out_map</i>&nbsp;
+                                                        <span>Ordenar</span>
+                                                    </a>
+                                                    <div class="preview">
+                                                        <input type="text" value="12" placeholder="Enter your own" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col s12 m6 column"></div>
+                                                <div class="col s12 m6 column"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 collapsible-body-div">
+                                    <div class="col s8">
+                                        <input type="text" id="grid84" value="8 x 4" disabled class="browser-default"/>
+                                    </div>
+                                    <div class="col s4">
+                                        <div id="drag_grid_84" class="btn draggable" title="drag">
+                                            <i class="material-icons">zoom_out_map</i>
+                                            <span>drag</span>
+                                        </div>
+                                        <div class="view">
+                                            <div class="row">
+                                                <div class="options">
+                                                    <a href="#close" class="remove badge badge-danger">
+                                                        <i class="material-icons">zoom_out_map</i>&nbsp;
+                                                        <span>Eliminar</span>
+                                                    </a>
+                                                    <a class="drag badge">
+                                                        <i class="material-icons">zoom_out_map</i>&nbsp;
+                                                        <span>Ordenar</span>
+                                                    </a>
+                                                    <div class="preview">
+                                                        <input type="text" value="12" placeholder="Enter your own" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col s12 m8 column"></div>
+                                                <div class="col s12 m4 column"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 collapsible-body-div">
+                                    <div class="col s8">
+                                        <input type="text" id="grid444" value="4 x 4 x 4" disabled class="browser-default"/>
+                                    </div>
+                                    <div class="col s4">
+                                        <div id="drag_grid_444" class="btn draggable" title="drag">
+                                            <i class="material-icons">zoom_out_map</i>
+                                            <span>drag</span>
+                                        </div>
+                                        <div class="view">
+                                            <div class="row">
+                                                <div class="options">
+                                                    <a href="#close" class="remove badge badge-danger">
+                                                        <i class="material-icons">zoom_out_map</i>&nbsp;
+                                                        <span>Eliminar</span>
+                                                    </a>
+                                                    <a class="drag badge">
+                                                        <i class="material-icons">zoom_out_map</i>&nbsp;
+                                                        <span>Ordenar</span>
+                                                    </a>
+                                                    <div class="preview">
+                                                        <input type="text" value="12" placeholder="Enter your own" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col s12 m4 column"></div>
+                                                <div class="col s12 m4 column"></div>
+                                                <div class="col s12 m4 column"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 collapsible-body-div">
+                                    <div class="col s8">
+                                        <input type="text" id="gridcoustom" title="The grid must add 12 columns" placeholder="Coustom" class="browser-default"/>
+                                    </div>
+                                    <div class="col s4">
+                                        <div id="drag_grid_coustom" class="btn draggable hide" title="drag">
+                                            <i class="material-icons">zoom_out_map</i>
+                                            <span>drag</span>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="row">
+                                            <div class="options">
+                                                <a href="#close" class="remove badge badge-danger">
+                                                    <i class="material-icons">zoom_out_map</i>&nbsp;
+                                                    <span>Eliminar</span>
+                                                </a>
+                                                <a class="drag badge">
+                                                    <i class="material-icons">zoom_out_map</i>&nbsp;
+                                                    <span>Ordenar</span>
+                                                </a>
+                                                <div class="preview">
+                                                    <input type="text" value="12" placeholder="Enter your own" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col m2 column"></div>
+                                            <div class="col m2 column"></div>
+                                            <div class="col m2 column"></div>
+                                            <div class="col m2 column"></div>
+                                            <div class="col m2 column"></div>
+                                            <div class="col m2 column"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">place</i>Componentes</div>
+                        <div class="collapsible-body">
+                            <div class="row">
+                                <div class="col s12 collapsible-body-div">
+                                    <div class="col s8">
+                                        <span>Table</span>
+                                    </div>
+                                    <div class="col s4">
+                                        <div id="drag_grid_12" class="btn draggable" title="drag" draggable="true">
+                                            <i class="material-icons">zoom_out_map</i>
+                                            <span>drag</span>
+                                        </div>
+                                        <div class="view">
+                                            <div class="delimiter">
+                                                <div class="options">
+                                                    <a href="#close" class="remove badge badge-danger">
+                                                        <i class="material-icons">zoom_out_map</i>&nbsp;
+                                                        <span>Eliminar</span>
+                                                    </a>
+                                                    <a class="drag badge">
+                                                        <i class="material-icons">zoom_out_map</i>&nbsp;
+                                                        <span>Ordenar</span>
+                                                    </a>
+                                                    <div class="preview">
+                                                        <input type="text" value="12" placeholder="Enter your own" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>Item Name</th>
+                                                            <th>Item Price</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                        <td>Alvin</td>
+                                                        <td>Eclair</td>
+                                                        <td>$0.87</td>
+                                                        </tr>
+                                                        <tr>
+                                                        <td>Alan</td>
+                                                        <td>Jellybean</td>
+                                                        <td>$3.76</td>
+                                                        </tr>
+                                                        <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>Lollipop</td>
+                                                        <td>$7.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li>
+                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Javascript</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="col s12 m9">
+            <div class="card-panel-right">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="col s12">
+                            <a class="btn-flat hide-on-large-only active" href="#" id="modoescritorio" title="Modo escritorio">
+                                <i class="material-icons">computer</i>
+                            </a>
+                            <a class="btn-flat hide-on-med-only" href="#" id="modotable" title="Modo table">
+                                <i class="material-icons">tablet</i>
+                            </a>
+                            <a class="btn-flat hide-on-small-only" href="#" id="modocelular" title="Modo celular">
+                                <i class="material-icons">phone_android</i>
+                            </a>
+                            <a class="btn-flat" href="#" id="modoeditar" title="Editar">
+                                <i class="material-icons">mode_edit</i>
+                            </a>
+                            <a class="btn-flat" href="#" id="modover" title="Editar">
+                                <i class="material-icons">visibility</i>
+                            </a>
+                            <a class="btn-flat" href="#" id="mododescarga" title="Editar">
+                                <i class="material-icons">file_download</i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="edit builder">
+                            <div class="canvas" id="canvas"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="builder-mt.js"></script> -->
+</body>
+</html>
